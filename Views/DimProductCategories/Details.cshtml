@@ -1,0 +1,50 @@
+﻿@model EntityFrame.Models.DimProductCategory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DimProductCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCategoryAlternateKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductCategoryAlternateKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnglishProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnglishProductCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SpanishProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpanishProductCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrenchProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrenchProductCategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductCategoryKey }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

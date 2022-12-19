@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntityFrame.Models.DimProductCategory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductCategoryAlternateKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnglishProductCategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpanishProductCategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrenchProductCategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductCategoryAlternateKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnglishProductCategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpanishProductCategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrenchProductCategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductCategoryKey }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductCategoryKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductCategoryKey })
+        </td>
+    </tr>
+}
+
+</table>

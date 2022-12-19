@@ -1,0 +1,56 @@
+﻿@model EntityFrame.Models.DimProductCategory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DimProductCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCategoryAlternateKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductCategoryAlternateKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnglishProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnglishProductCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SpanishProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpanishProductCategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrenchProductCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrenchProductCategoryName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

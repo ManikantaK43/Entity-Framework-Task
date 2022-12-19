@@ -1,0 +1,237 @@
+﻿@model IEnumerable<EntityFrame.Models.DimProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductAlternateKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WeightUnitMeasureCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SizeUnitMeasureCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnglishProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpanishProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrenchProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StandardCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinishedGoodsFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SafetyStockLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReorderPoint)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ListPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SizeRange)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaysToManufacture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductLine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DealerPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Style)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LargePhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnglishDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrenchDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChineseDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArabicDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HebrewDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThaiDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GermanDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JapaneseDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TurkishDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DimProductSubcategory.EnglishProductSubcategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductAlternateKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WeightUnitMeasureCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeUnitMeasureCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnglishProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpanishProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrenchProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StandardCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinishedGoodsFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SafetyStockLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReorderPoint)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeRange)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaysToManufacture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductLine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DealerPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Style)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LargePhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnglishDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrenchDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChineseDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArabicDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HebrewDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThaiDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GermanDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JapaneseDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TurkishDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DimProductSubcategory.EnglishProductSubcategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductKey }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductKey })
+        </td>
+    </tr>
+}
+
+</table>
